@@ -55,7 +55,7 @@ class Runner:
                 returns.append(self.evaluate())
                 plt.figure()
                 plt.plot(range(len(returns)), returns)
-                plt.xlabel('episode * ' + str(self.args.evaluate_rate / self.episode_limit))
+                plt.xlabel('episode * ' + str(self.args.evaluate_rate))
                 plt.ylabel('average returns')
                 plt.savefig(self.save_path + '/plt.png', format='png')
             self.noise = max(0.05, self.noise - 0.0000005)

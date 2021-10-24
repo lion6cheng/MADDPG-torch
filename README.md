@@ -11,7 +11,7 @@ This is a pytorch implementation of MADDPG on [Multi-Agent Particle Environment(
 ## Quick Start
 
 ```shell
-$ python main.py --scenario-name=simple_tag --evaluate-episodes=10
+$ python main.py --scenario-name=simple_tag --evaluate-episodes=10 --num-adversaries=1 2>&1 >out
 ```
 
 Directly run the main.py, then the algrithm will be tested on scenario 'simple_tag' for 10 episodes, using the pretrained model.
@@ -19,6 +19,7 @@ Directly run the main.py, then the algrithm will be tested on scenario 'simple_t
 ## Note
 
 + We have train the agent on scenario 'simple_tag', but the model we provide is not the best because we don't want to waste time on training, you can keep training it for better performence.
+
 
 + There are 4 agents in simple_tag, including 3 predators and 1 prey. we use MADDPG to train predators to catch the prey. The prey's action can be controlled by you, in our case we set it random. 
 
