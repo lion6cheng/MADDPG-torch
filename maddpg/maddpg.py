@@ -37,6 +37,7 @@ class MADDPG:
             os.mkdir(self.model_path)
 
         # 加载模型
+        # 加载模型
         # if os.path.exists(self.model_path + '/actor_params.pkl'):
         #     self.actor_network.load_state_dict(torch.load(self.model_path + '/actor_params.pkl'))
         #     self.critic_network.load_state_dict(torch.load(self.model_path + '/critic_params.pkl'))
